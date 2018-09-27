@@ -1,4 +1,39 @@
 /*
+ * Start Bootstrap - Business-Frontpage (https://startbootstrap.com/template-overviews/business-frontpage)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-business-frontpage/blob/master/LICENSE)
+ */
+
+body {
+  padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+.business-header {
+  height: 25vh;
+  min-height: 300px;
+  background: url("../images/world_map_background_pixabay.jpg") center center no-repeat scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+
+/* Keeps all of the cards the same height */
+.card {
+  height: 100%;
+}
+
+/* ############################################################## */
+
+
+/*
 
 [Basic Page Stylesheet]
 
@@ -8,53 +43,633 @@ Author : Thomas R Peterson
 
 [Table of contents]
 
+Classes
+  Bootstrap:
+    
+  Custom:
+    header-toolbar
+    wrapper
 
-1. GENERAL STYLES
-   A - PRELOADER
-   B - GO TO TOP
-   C - ANY TOPIC TITLE
-   D - PAGINATION
-   E - BREADCRUMB
-   F - SUB INFO
-   G - MODAL BOX
+IDs
+
+
+
+/*
+1. CLASS STYLES
+  - 1-1 Wrapper
+  - 1-2 
+  - 1-3 
    
 2. TYPOGRAPHY
-   A - LINKS
-   B - HEADERS
-   C - MISC
+  - 2-1 Links
+  - 2-2 Headers
+  - 2-3 Misc
 
 3. LAYOUT
-   A - GRID
-   B - PAGE HEADER
+  - 3.1 Grid
+  - 3.2 Page Header
 
 4. HEADER
-   A - HEADER TOOL BAR
-   B - TIME AND DATE
-   C - WEATHER
-   D - SITE LOGO
+  - 4-1 Header Toolbar
+  - 4-2 Site Logo
+  - 4-3 
+  - 4-4 
    
 5. NAVIGATION
-   A - PARENT NAVIGATION
-   B - CHILD NAVIGATION
+  - 5-1 Parent Navigation
+  - 5-2 Child Navigation
    
-6. SEARCH
+6. LEFT COLUMN
+  - 6-1 
+  - 6-2 
+    - 6-3
+  
+7. MID COLUMN
+  - 7-1 
+  - 7-2 
+    - 7-3 
 
-7.FOOTER
+8. RIGHT COLUMN
+  - 8-1 
+  - 8-2 
+  - 8-3
 
-8. 404 PAGE
+9. FOOTER
 
-9 MEDIA QUERIES
+10. SOCIAL MEDIA
+  - 10-1 Font Awesome for Social Media Links
+  - 10-2 Font Awesome LinkedIn Logo
 
-10 SOCIAL MEDIA
-	A - FONT AWESOME FOR SOCIAL MEDIA LINKS
-	B - FONT AWESOME LINKEDIN LOGO
+11. 404 PAGE
 
-*********************************************** */
+12. MEDIA QUERIES
+*/
 
+/*------------------------------------*\
+    1-GENERAL STYLES
+\*------------------------------------*/
+
+/* 1-1 Wrapper */
+
+/*
+#wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fdfdfd;
+  z-index: 3000; /* makes sure it stays on top */
+}
+*/
+
+/* 1-2 ????????????? */
+
+/* 1-3 ????????????? */
+
+/*------------------------------------*\
+    2-TYPOGRAPHY
+\*------------------------------------*/
+
+/* 2-1 Links */
+
+/*a {
+  color: #3d566e;
+}
+a:hover, a:focus {
+  color: #e74c3c;
+  text-decoration: none;
+  outline: none;
+}
+a:hover img {
+  border: 1px solid #ffcfca;
+  opacity: 0.6;
+}
+p {
+  color: #8d9aa5;
+}
+*/
+
+/* 2-2 Headers */
+/*
+h1 {
+  font-size: 24px;
+  color: #e74c3c;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  font-size: 22px;
+}
+h2 {
+  font-size: 22px;
+  color: #3d566e;
+  font-weight: bold;
+}
+h3 {
+  font-size: 20px;
+  color: #3d566e;
+  font-weight: bold;
+}
+h4 {
+  color: #3d566e;
+  font-size: 14px;
+  font-weight: bold;
+}
+h5 {
+  color: #3d566e;
+  font-size: 14px;
+  font-weight: bold;
+}
+h6 {
+  color: #3d566e;
+  font-size: 14px;
+  font-weight: bold;
+}
+*/
+
+/* 2-3 Misc */
+/*
+* {
+  border-radius: 0 !important;
+}
+*:focus {
+  outline: none;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #8d9aa5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fdfdfd;
+}
+mark {
+  background: #e74c3c;
+  color: #fff;
+}
+br {
+  margin: 5px 0;
+}
+hr {
+  border-top: 1px solid #ededed;
+}
+blockquote {
+  border-color: #e74c3c;
+}
+blockquote p {
+  color: #e74c3c;
+}
+.img-thumbnail {
+  background-color: #f8f8f8;
+  border: 1px solid #ededed;
+}
+.text-danger {
+  color: #e74c3c;
+}
+.icon {
+  padding-right: 4px;
+}
+.top-margin {
+  margin-top: 45px;
+}
+.bordered {
+  border: 1px solid #ededed;
+  padding: 5px 5px 0 5px;
+}
+.sec-topic {
+  margin-bottom: 20px;
+  padding-right: 15px;
+}
+.right-sec .main-title {
+  font-size: 14px;
+}
+.right-sec .list-inline li {
+  margin-bottom: 5px;
+}
+.blue {
+  background: #3d566e;
+  color: #fff;
+}
+*/
+
+/*------------------------------------*\
+    3-LAYOUT
+\*------------------------------------*/
+
+/* 3-1 Grid */
+
+/*
+.row {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12, .col-xs-13, .col-sm-13, .col-md-13, .col-lg-13, .col-xs-14, .col-sm-14, .col-md-14, .col-lg-14, .col-xs-15, .col-sm-15, .col-md-15, .col-lg-15, .col-xs-16, .col-sm-16, .col-md-16, .col-lg-16 {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+*/
+
+/* 3-2 Page Header */
+/*
+.page-header {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ededed;
+}
+.page-header small {
+  padding-left: 5px;
+  font-size: 14px;
+  text-transform: none;
+  color: #78899b;
+}
+.page-header h1 {
+  display: inline-block;
+}
+*/
+
+/*------------------------------------*\
+    4-HEADER
+\*------------------------------------*/
+
+/* 4-1 Header Toolbar */
+/*
+.header-toolbar {
+  font-size: 11px;
+  font-weight: 600;
+  color: #78899b;
+  border-bottom: 1px solid #ecf0f1;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.header-toolbar a {
+  color: #78899b;
+}
+.header-toolbar a:hover {
+  color: #e74c3c;
+}
+.header-toolbar ul.list-inline {
+  margin-bottom: 0;
+}
+.header-toolbar ul.list-inline li {
+  padding-right: 6px;
+  padding-left: 6px;
+}
+*/
+
+/* 4-2 Site Logo */
+/*
+.header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.navbar-brand {
+  width: 190px;
+  height: 46px;
+  margin-top: 5px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background: url('../images/general/tearpe-logo.png') no-repeat;
+  background-size: 100%;
+  padding: 0;
+}
+*/
+
+/* 4-3 ?????????? */
+
+/* 4-4 ?????????? */
+
+/*------------------------------------*\
+    5-NAVIGATION
+\*------------------------------------*/
+
+/* 5-1 Parent Navigation */
+/*
+.main-menu {
+  background: #fff;
+}
+.navbar-fixed-top {
+  top: -60px;
+  transition: top 800ms ease 0s;
+}
+.show-2 {
+  transition: bottom 800ms ease 0s;
+}
+.show {
+  top: 0;
+}
+.navbar-collapse {
+  padding-left: 0;
+  padding-right: 0;
+}
+.navbar {
+  margin-bottom: 0;
+}
+.navbar-inverse {
+  background-color: #3d566e;
+  border-top: none;
+  border-bottom: 3px solid #e74c3c;
+  border-right: none;
+  border-left: none;
+}
+.navbar-inverse .navbar-nav li:first-child a {
+  padding-left: 0;
+}
+.navbar-inverse .navbar-nav li a {
+  color: #fff;
+  font-weight: bold;
+}
+.navbar-inverse .navbar-nav li a:hover {
+  color: #e74c3c;
+}
+.navbar-inverse .navbar-nav .open a, .navbar-inverse .navbar-nav .open a:hover, .navbar-inverse .navbar-nav .open a:focus {
+  color: #e74c3c;
+  background: none;
+}
+.navbar-inverse .navbar-nav li a, .navbar-inverse .navbar-nav li a:hover, .navbar-inverse .navbar-nav li a:focus {
+  border-right: 1px solid #44617d;
+}
+.navbar-inverse .navbar-nav li:last-child a {
+  border-right: none;
+}
+.navbar-inverse .navbar-nav li.active a, .navbar-inverse .navbar-nav li.active a:hover, .navbar-inverse .navbar-nav li.active a:focus {
+  background: none;
+  color: #e74c3c;
+}
+.navbar-inverse .navbar-toggle, .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+  border: none;
+  background: #e74c3c;
+  float: left;
+}
+*/
+
+/* 5-2 Child Navigation */
+/*
+.navbar-inverse .dropdown-menu {
+  background: #e74c3c;
+  border: none;
+}
+.navbar-inverse .dropdown-menu li a {
+  color: #fff !important;
+  font-weight: normal;
+  border-right: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.navbar-inverse .dropdown-menu li a:hover, .navbar-inverse .dropdown-menu li a:focus {
+  background-color: #da4839 !important;
+  color: #3d566e !important;
+  border-right: none !important;
+}
+.navbar-inverse .dropdown-menu li:first-child a {
+  padding-left: 20px;
+}
+.dropdown-menu > li > a {
+  color: #fff;
+}
+.nav-icn {
+  margin-left: 5px;
+}
+.nav-sub-icn {
+  margin-right: 5px;
+}
+.mega-menu {
+  min-width: 784px;
+  padding: 10px 0;
+}
+.mega-sub {
+  list-style: none;
+  padding: 0;
+  border-right: 1px solid #da4839;
+  margin-right: 10px;
+  min-height: 170px;
+}
+.mega-sub a {
+  display: block;
+  padding: 10px 20px;
+}
+.mega-sub-topics {
+  padding-right: 20px;
+}
+.mega-sub-topics h4 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 0 0 5px 0;
+}
+.mega-sub-topics a {
+  padding: 0 !important;
+}
+.mega-sub-topics a:hover img {
+  opacity: 1;
+}
+.badge {
+  background-color: #3d566e;
+}
+*/
+
+/*------------------------------------*\
+    6-LEFT COLUMN
+\*------------------------------------*/
+
+/* 6-1 ?????????????? */
+
+/* 6-2 ?????????????? */
+
+/* 6-3 ?????????????? */
+
+/*------------------------------------*\
+    7-MID COLUMN
+\*------------------------------------*/
+
+/*7-1 ?????????????? */
+
+/*7-2 ?????????????? */
+
+/*7-3 ?????????????? */
+
+/*------------------------------------*\
+    8-RIGHT COLUMN
+\*------------------------------------*/
+
+/*8-1 ?????????????? */
+
+/*8-2 ?????????????? */
+
+/*8-3 ?????????????? */
+
+/*------------------------------------*\
+    9-FOOTER
+\*------------------------------------*/
+
+/*
+footer {
+  border-top: 3px solid #e74c3c;
+  margin: 20px 0 10px 0;
+  background-color: #3d566e;
+}
+footer .top-sec {
+  background-color: #3d566e;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+footer .btm-sec {
+  background-color: #fff;
+}
+footer .f-title {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 0;
+  margin-bottom: 5px;
+}
+footer p {
+  color: #c1c7cd;
+}
+footer .stars {
+  color: #b0b7bf;
+}
+.f-sub-info {
+  color: #b0b7bf;
+}
+.subscribe-info {
+  border-right: 1px solid #486581;
+  padding-right: 20px;
+  min-height: 260px;
+}
+.subscribe-info form {
+  position: relative;
+}
+.subscribe-info .form-control {
+  width: 100%;
+  padding-right: 35px;
+}
+.subscribe-info .btn {
+  border: none;
+  background: none;
+  position: absolute;
+  right: 0;
+  top: -5px;
+}
+.subscribe-info .btn span {
+  font-size: 24px;
+}
+.popular-tags {
+  padding-right: 20px;
+  padding-left: 20px;
+  border-right: 1px solid #486581;
+  height: 260px;
+  overflow: hidden;
+}
+.tags {
+  list-style: none;
+}
+.tags li {
+  border-left: solid 2px #3d566e;
+  position: relative;
+  z-index: 1;
+  background-color: #486581;
+  float: left;
+  margin: 2px 5px;
+  text-align: center;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.tags.list-unstyled li:last-child {
+}
+.tags li:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -6px;
+  border-left: solid 4px #486581;
+  width: auto;
+  margin-top: 0;
+  min-height: 100%;
+  z-index: 10;
+}
+.tags li:hover {
+  background: #e74c3c
+}
+.tags li a {
+  color: #fff;
+  text-transform: capitalize;
+  display: block;
+  padding: 8px 10px;
+}
+.tags li a:hover {
+  background: #e74c3c;
+}
+.tags li:hover:before {
+  border-color: #e74c3c;
+}
+.recent-posts {
+  padding-left: 20px;
+}
+.recent-posts .img-thumbnail {
+  background: #4b6986;
+  border: 1px solid #4f7396;
+}
+.recent-posts li a:hover .img-thumbnail {
+  border: 1px solid #4f7396;
+}
+.recent-posts .list-unstyled li {
+  border-bottom: none;
+  margin-bottom: 5px;
+  padding-bottom: 0;
+}
+.recent-posts .list-unstyled li h4 {
+  color: #fff;
+}
+.btm-sec {
+  padding-top: 20px;
+  padding-bottom: 0;
+  color: #3d566e;
+}
+.btm-sec .list-inline li a {
+  padding-right: 4px;
+  padding-left: 4px;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #3d566e;
+}
+.btm-sec .list-inline li a:hover {
+  color: #e74c3c;
+}
+.copyrights {
+  font-size: 12px;
+}
+.f-social {
+  text-align: center;
+  padding-top: 10px;
+}
+.f-social a {
+  margin: 0 5px;
+  border: 1px solid #3d566e;
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  line-height: 36px;
+  display: inline-block;
+}
+.f-social ul li {
+  padding: 0;
+}
+.f-social ul li a span {
+  font-size: 16px;
+  line-height: 36px;
+  width: 36px;
+  height: 36px;
+}
+.f-social ul li a:hover {
+  color: #e74c3c;
+  border-color: #e74c3c;
+}
+*/
 
 /* 10 SOCIAL MEDIA */
 
-	/* 10-A FONT AWESOME FOR SOCIAL MEDIA LINKS */
+  /* 10-1 Font Awesome for Social Media Links */
 .fa {
   padding: 20px;
   font-size: 30px;
@@ -68,11 +683,286 @@ Author : Thomas R Peterson
     opacity: 0.7;
 }
 
-	/* 10-B - FONT AWESOME LINKEDIN LOGO */
+  /* 10-2 - Font Awesome LinkedIn Logo */
 .fa-linkedin {
   background: #007bb5;
   color: white;
 }
 
+/*------------------------------------*\
+    11-404 PAGE
+\*------------------------------------*/
 
+/*
+.wrong-icon {
+  font-size: 200px;
+  color: #3d566e;
+  border-top: 1px solid #ededed;
+}
+.wrong-page {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+*/
 
+/*------------------------------------*\
+    12-MEDIA QUERIES
+\*------------------------------------*/
+
+/*
+@media (max-width:348px) {
+.grid .sub-info-bordered {
+  height: 50px;
+}
+.grid .sub-info-bordered .stars {
+  float: left;
+}
+.sec-topic .sub-info-bordered {
+  height: 50px;
+}
+.sec-topic .sub-info-bordered .stars {
+  float: left;
+}
+}
+
+@media (max-width:767px) {
+.navbar-header {
+  float: none;
+}
+.navbar-toggle {
+  display: block;
+}
+.navbar-collapse {
+  border-top: 1px solid transparent;
+}
+.navbar-collapse.collapse {
+  display: none!important;
+}
+.navbar-nav {
+  float: none!important;
+  margin: 7.5px -15px;
+}
+.navbar-nav>li>a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.navbar-collapse.collapse.in {
+  display: block!important;
+}
+.collapsing {
+  overflow: hidden!important;
+}
+.navbar-inverse .dropdown-menu {
+  background: none;
+  border: none;
+}
+.nav li {
+  border-bottom: 1px solid #44617d;
+}
+.dropdown-menu li {
+  border-bottom: none;
+}
+.mega-menu {
+  min-width: inherit;
+  padding: 0;
+}
+.mega-menu a {
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+}
+.nav-icn {
+  float: right;
+  margin-right: 10px;
+}
+.mega-sub {
+  padding-bottom: 5px;
+  min-height: inherit;
+}
+.open {
+  background: #e74c3c;
+}
+.open li {
+  border-bottom: 1px solid #da4839;
+}
+.open li a {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  margin-left: 10px;
+}
+.open li:last-child {
+  border-bottom: none;
+}
+.open .dropdown-toggle {
+  background: #3d566e !important;
+}
+#scrollUp {
+  bottom: 10px;
+}
+.main-title {
+  font-size: 15px;
+}
+#time-date {
+  text-align: left;
+}
+#weather {
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.owl-prev, .owl-next {
+  display: none;
+}
+.info {
+  line-height: 54px;
+}
+.banner-outer .carousel-caption {
+  font-size: 18px;
+  line-height: 18px;
+  padding-bottom: 20px;
+}
+.science {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ededed;
+}
+.pickmeup .pmu-instance .pmu-day-of-week *, .pickmeup .pmu-instance .pmu-days * {
+  width: 27px;
+}
+.subscribe-info {
+  min-height: inherit;
+}
+.popular-tags {
+  height: auto;
+  overflow: visible;
+}
+.subscribe-info {
+  border-right: none;
+  padding-right: 5px;
+}
+.popular-tags {
+  padding-right: 5px;
+  padding-left: 5px;
+  border-right: none;
+}
+.recent-posts {
+  padding-left: 5px;
+}
+.f-social .list-inline li {
+  float: left;
+}
+.f-nav .list-inline li {
+  padding-left: 0;
+  margin-bottom: 5px;
+}
+.copyrights {
+  text-align: left;
+  margin-bottom: 5px;
+}
+.mid-sec .list-unstyled li {
+  width: 100%;
+  padding-bottom: 10px;
+  float: left;
+}
+}
+
+@media (min-width:768px) and (max-width:991px) {
+.navbar-nav>li>a {
+  padding: 15px 10px;
+  font-size: 12px;
+}
+.mega-menu {
+  min-width: 280px;
+}
+.mega-sub {
+  border-right: none;
+}
+.last-update {
+  font-size: 11px;
+}
+.pickmeup .pmu-instance .pmu-day-of-week *, .pickmeup .pmu-instance .pmu-days * {
+  width: 27px;
+}
+.popular-tags {
+  height: auto;
+  overflow: visible;
+}
+}
+
+@media (min-width: 850px) {
+.search-container input {
+  font-size: 2em;
+}
+}
+
+@media (max-width:991px) {
+.navbar-inverse .navbar-nav li:first-child a {
+  padding-left: 15px;
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+  border: none;
+}
+.navbar-inverse .navbar-nav li a, .navbar-inverse .navbar-nav li a:hover, .navbar-inverse .navbar-nav li a:focus {
+  border-right: none !important;
+}
+.owl-item img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.social a {
+  font-size: 9px;
+}
+.nav-justified li a {
+  font-size: 10px;
+}
+.breadcrumb {
+  float: left;
+  width: 100%;
+  padding-top: 20px;
+  padding-left: 0;
+}
+}
+
+@media (max-width:1080px) {
+.grid {
+  width: 100% !important;
+  margin-top: 10px;
+}
+.masonry-item {
+  width: 100%;
+  margin: 0;
+  padding: 0 0 20px 0;
+  background: #fff;
+  border: none;
+}
+.masonry-item:hover {
+  border: none;
+}
+}
+
+@media (max-width: 1170px) {
+.pickmeup .pmu-instance .pmu-day-of-week *, .pickmeup .pmu-instance .pmu-days * {
+  width: 37px;
+}
+.popular-tags {
+  padding-right: 20px;
+  padding-left: 20px;
+  border-right: 1px solid #486581;
+  border-left: 1px solid #486581;
+  overflow: visible;
+  height: auto;
+}
+.right-img-top {
+  height: 220px;
+}
+.right-img-top .box {
+  height: 220px;
+}
+.right-img-btm {
+  height: 218px;
+}
+.right-img-btm .box {
+  height: 218px;
+}
+}
+*/
