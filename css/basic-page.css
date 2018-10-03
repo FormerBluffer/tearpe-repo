@@ -31,8 +31,26 @@ body {
 }
 
 /* ############################################################## */
+.about-us-rocket {
+  width: 300px;
+}
 
+.about-us {
+  color: #09099E;
+  font-size: 3rem; 
+}
 
+.about-us p {
+  margin: -30px;
+}
+
+#georgeJetsonPicture {
+  height: 150px;
+}
+
+#myAvatar {
+  height: 150px;
+}
 /*
 
 [Basic Page Stylesheet]
@@ -42,17 +60,6 @@ Version: 1.0
 Author : Thomas R Peterson
 
 [Table of contents]
-
-Classes
-  Bootstrap:
-    
-  Custom:
-    header-toolbar
-    wrapper
-
-IDs
-
-
 
 /*
 1. CLASS STYLES
