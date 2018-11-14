@@ -40,15 +40,6 @@ body {
   width: 300px;
 }
 
-.about-us {
-  color: #09099E;
-  font-size: 3rem; 
-}
-
-.about-us p {
-  margin: -30px;
-}
-
 .border-box {
   color: red;
   border: 2px solid red;
