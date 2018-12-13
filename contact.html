@@ -24,6 +24,8 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   
+<!--external Javascript file for this page-->   
+  <script src="contact-us.js"></script> 
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -68,7 +70,6 @@
   <!-- PAGE CONTENT START -->
   <div class="container">
 
-    <!--CONTACT INFORMATION START -->
     <div class="row">
       <div class="col-sm-12 text-center"> 
         <h1>TeaRPe</h1>
@@ -78,9 +79,34 @@
 
     <div class="row">
       <div class="col-sm-12 text-center"> 
-        <p>Thank you for your interest. To find out how I can help you or to provide constructive feedback about this website, please contact me.</p>
+        <p>Thank you for your interest. To find out how I can help you or to provide constructive feedback about this website, please contact me using the following form or by using the contact information below.</p>
       </div>
     </div>
+
+    <!-- CONTACT FORM START -->
+    <div class="container">
+      <h1 class="text-center">Contact Us Form</h1>
+      <form action="http://www.tearpe.com/cgi-sys/formmail.pl" method="post" name="hgmailer">
+        <input type="hidden" name="recipient" value="contact.us@tearpe.com">
+        <input type="hidden" name="subject" value="FormMail E-Mail">Please fill out the following form (*required information):
+        <br>
+        <br>
+        First Name* <input type="text" name="firstname" size="15" value="">
+        Last Name <input type="text" name="lastname" size="20" value="">
+        <br>
+        <br>E-Mail Address* <input type="text" name="email" size="35" value="">
+        <br>
+        <br>
+        Message* <textarea name="comment" cols="70" rows="10"></textarea>
+        <br>
+        <br>
+        <input class="btn-primary" type="button" value="Submit" onclick="hgsubmit();">
+        <input type="hidden" name="redirect" value="http://www.tearpe.com/contact.html">
+      </form>
+
+    </div>
+
+    <!-- CONTACT FORM END -->
 
     <!-- CONTACT INFO START -->
     <div class="container">
@@ -97,14 +123,12 @@
            (123) 456-7890
             <br>
             <abbr title="Email">Email:</abbr>
-            <a href="mailto:#">name@example.com</a>
+            <a href="mailto:contact.us@tearpe.com?subject=Message From TeaRPe Contact Information Page">contact.us@tearpe.com</a>
           </address>
         </div>
       </div>
     </div>
-    <!-- CONTACT INFO END --> 
-
-    <!-- CONTACT INFORMATION END -->       
+    <!-- CONTACT INFO END -->      
            
   </div>
   <!-- PAGE CONTENT END -->
